@@ -14,11 +14,6 @@ iframe {
     background: transparent;
 }
 
-.projectGrid>* {
-    height: 100%;
-    overflow: auto;
-}
-
 .bossTasks {
     background-image: url('thumbnails/thumbnail-bosstasks.png');
 }
@@ -30,6 +25,10 @@ iframe {
 .squink {
     background-position: 100% 0 !important;
     background-image: url('thumbnails/squink.png');
+}
+
+.landscapePainting {
+    background-image: url('thumbnails/thumbnail-landscapepainting.png');
 }
 
 .thumbnailButton {
@@ -52,6 +51,7 @@ iframe {
 }
 
 .centerContainer {
+    position: relative;
     margin: 1rem;
     max-width: 1200px;
     margin-left: auto;
@@ -59,19 +59,30 @@ iframe {
 }
 
 .projectGrid {
+    position: relative;
     display: grid;
-    gap: 1rem;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
 }
 
+.projectGrid>* {
+    height: 100%;
+    overflow: auto;
+}
+
 .gameWrapper {
-    overflow: visible;
     position: relative;
-    margin: 0.5rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 100%;
     width: calc(100% - 1rem);
+    margin: 0;
+    padding: 0px 4px 0px 4px;
 }
 
 .gameDisplayBox {
@@ -84,6 +95,25 @@ iframe {
     background-repeat: no-repeat;
     height: 200px;
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wipDisplayBox {
+    border-radius: 10px;
+    border: 4px dashed rgb(168, 162, 129);
+    padding: 0px 4px 0px 4px;
+}
+
+.wip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(168, 162, 129);
+    font-size: 1rem;
+    z-index: 100;
+    margin-top: 19.5rem;
+    font-weight: bold;
 }
 
 
