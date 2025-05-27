@@ -1,0 +1,160 @@
+:root {
+    --gray: #e5e2d2;
+    --white: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background: var(--gray);
+}
+
+.main-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.image-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    height: 60vh;
+}
+
+.image-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 2px solid var(--white);
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.02);
+}
+
+.image-large {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.image-small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.content-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: rgb(146, 157, 158);
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.tools-section {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+}
+
+.tools-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-transform: lowercase;
+}
+
+.tools-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.tool-item {
+    background: transparent;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: var(--white);
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 100%;
+    border: 3px solid var(--white);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 5px;
+}
+
+.home-button:hover {
+    background: #4a4a4a;
+    transform: translateY(-1px);
+}
+
+.home-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .content-section {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        height: 50vh;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .tools-list {
+        gap: 1rem;
+    }
+
+    .tool-item {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
