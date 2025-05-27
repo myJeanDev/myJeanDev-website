@@ -42,7 +42,7 @@ function createEmoji() {
 function updateEmojiStyle(emoji) {
     const data = emoji.emojiData;
     const opacity = 1.0 - (data.distance * 0.8);
-    const zIndex = 10 - Math.floor(data.distance * 10);
+    const zIndex = Math.floor(data.distance * 5);
 
     // Apply the other styles
     emoji.style.transform = `translate(-50%, -50%) scale(${data.scale}) rotate(${data.rotation}deg)`;
