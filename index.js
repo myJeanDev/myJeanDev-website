@@ -12,9 +12,9 @@ function getRandomEmoji() {
     return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
+// duplicates so 4 leaf clover is more rare
 const emojis = [
-    '🌱', '🌿', '🍃',
-    '🐊', '🐢', '🐛', '🐸', '🪴',
+    '🌱', '🌿', '🍃', '🪴', '☘️', '🌸', '🌺', '🌱', '🌿', '🍃', '🪴', '☘️', '🌸', '🌺', '🍀'
 ];
 
 function createEmoji() {
