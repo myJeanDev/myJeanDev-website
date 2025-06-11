@@ -11,7 +11,6 @@ body {
     color: var(--white);
     font-family: monospace;
     overflow-x: hidden;
-    height: 100%;
 }
 
 a {
@@ -151,6 +150,7 @@ h2 {
     margin-top: -16rem;
     font-weight: bold;
     background: #2A99D5;
+    border-radius: 10px;
     padding: 0.7rem;
 }
 

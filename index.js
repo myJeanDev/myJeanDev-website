@@ -56,7 +56,7 @@ function setupEmoji(x, y) {
     const emoji = createEmoji();
     positionElement(emoji, x, y);
     updateEmojiStyle(emoji);
-    document.body.appendChild(emoji);
+    document.getElementById("emojiContainer").appendChild(emoji);
     return emoji;
 }
 
