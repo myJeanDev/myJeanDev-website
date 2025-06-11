@@ -78,6 +78,10 @@ h2 {
     background-image: url('thumbnails/thumbnail-islandPaintingJs.png');
 }
 
+.fakechat {
+    background-image: url('thumbnails/thumbnail-fake-chat.png');
+}
+
 .shadowBoxNoHover {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
