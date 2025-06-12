@@ -50,20 +50,20 @@ h2 {
 }
 
 .placeNotes {
-    background-image: url('thumbnails/placeNotesCover.png');
+    background-image: url('thumbnails/thumbnail-place-notes.png');
 }
 
 .bossTasks {
-    background-image: url('thumbnails/thumbnail-bosstasks.png');
+    background-image: url('thumbnails/thumbnail-boss-tasks.png');
 }
 
 .petSixtyFour {
-    background-image: url('thumbnails/thumbnail-petsixtyfour0.png');
+    background-image: url('thumbnails/thumbnail-pet-sixty-four.png');
 }
 
 .squink {
     background-position: 100% 0 !important;
-    background-image: url('thumbnails/squink.png');
+    background-image: url('thumbnails/thumbnail-squink.png');
 }
 
 .valorantUi {
@@ -75,7 +75,7 @@ h2 {
 }
 
 .islandPaintingJs {
-    background-image: url('thumbnails/thumbnail-islandPaintingJs.png');
+    background-image: url('thumbnails/thumbnail-island-painting-js.png');
 }
 
 .fakechat {
