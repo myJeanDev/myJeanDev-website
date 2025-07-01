@@ -49,6 +49,11 @@ h2 {
     overflow: hidden;
 }
 
+.definedle {
+    background-position: 100% 0 !important;
+    background-image: url('thumbnails/thumbnail-definedle.png');
+}
+
 .placeNotes {
     background-image: url('thumbnails/thumbnail-place-notes.png');
 }
