@@ -49,6 +49,11 @@ h2 {
     overflow: hidden;
 }
 
+.fword {
+    background-position: 100% 0 !important;
+    background-image: url('thumbnails/thumbnail-fword.png');
+}
+
 .definedle {
     background-position: 100% 0 !important;
     background-image: url('thumbnails/thumbnail-definedle.png');
